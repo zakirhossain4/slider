@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+/*Comonn css part End*/
+
+/*Navbar st*/
+.navbar{
+    background-color: rgb(228, 170, 202);
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding: 0 28px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 0;
+    padding-left: 0;
+   
+    font-family:'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    transition: all linear .3s;
+    position: relative;
+    text-transform: uppercase;
+}
+.navbar-expand-lg .navbar-nav .nav-link:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 0;
+    height: 3px;
+    background-color:#e917c6; 
+    transition: all linear .3s;
+    
+    }
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link{
+    padding-right: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link{
+    color: #e917c6;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link::after{
+    width: 100% ;
+}
